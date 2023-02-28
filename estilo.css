@@ -18,17 +18,16 @@ body{
     justify-content: space-between;
     height: 50px;
     width: 100%;
-    }
-    #principal div{
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    }
-    #principal div a{   
-    text-decoration: none;
-    color: white;
-    
-    }
+}
+#principal div{
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+}
+#principal div a{   
+	text-decoration: none;
+	color: white;
+}
 
 
 
@@ -51,23 +50,25 @@ form input{
     border: 0px;
     margin-bottom: 15px;
     border-radius: 25px;
+	padding-left: 15px;/*Cria um espaçamento de 15px na esquerda*/
 }
 
 form input::placeholder{
     padding: 5px;
 }
+
 form input[type="submit"]{
     background: #8C77E0;
     color: white;
     font-size: 12pt;  
-    min-width: 144px;
+    min-width: 144px; /*Informa uma largura minima no componente, caso o conteudo seja menor que 144px, a largura sera aumentada para 144px*/
     border-radius: 6px;
     margin-top: 15px;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 20px; /*Cria um espaçamento de 20px na esquerda, serve para melhorar a interface do botoes, desgrudando o texto da borda*/
+	padding-right: 20px;/*Cria um espaçamento de 20px na direita*/
 }
 #label{
     text-align: center;
@@ -78,5 +79,5 @@ form div {
 }
 
 #principal div#incones{
-	width: 50px;
+	width: 50px; /*Altera a largura do componente, neste caso para 50px, dessa forma os icones ficam mais juntos.*/
 }
